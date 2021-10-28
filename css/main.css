@@ -15,6 +15,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  margin:0;
+  padding:0;
 }
 
 /*
@@ -86,6 +88,35 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {
+  margin : 0;
+  color : #3f3f3f;
+}
+.btn-outline-danger {
+  color: #f2388f;
+  border-color: #f2388f;
+}
+
+.pink {
+  color: #f2388f;
+}
+.btn-primary {
+  color: #f2388f;
+  background-color: #fff;
+  border-color: #f2388f ;
+}
+
+.card {
+
+  border: solid 2px #f2388f;
+  background-color: #f8f9fa ;
+  margin: 0.5em;
+}
+
+i.fab {
+  color:#f2388f;
+}
+
 #relative {
   position: relative;
   background-image: url("../img/img_fond_header.jpg");
@@ -112,9 +143,10 @@ textarea {
   left:0; right:0;
   margin: auto;
 }
+
 h1 {
   text-align: center;
-  margin: 2em auto 2em;
+  margin: 1em auto 1em;
 }
 
 @media only screen and (min-width: 268px) {
