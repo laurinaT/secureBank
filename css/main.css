@@ -88,10 +88,41 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* -------------------------------------------------------------------------------- Layer secure --------------------------------------------------------------- */
+
+
+
+#layer_secure {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  min-width: 100%;
+  min-height: 100%;
+  background: #fff;
+  text-align: center;
+  
+}
+
+#container_secure {
+  max-height: 40vh;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* -------------------------------------------------------------------------------- Tout --------------------------------------------------------------- */
+
+
 * {
   margin : 0;
   color : #3f3f3f;
 }
+
+
+
 .btn-outline-danger {
   color: #f2388f;
   border-color: #f2388f;
@@ -116,6 +147,8 @@ textarea {
 i.fab {
   color:#f2388f;
 }
+
+
 
 #relative {
   position: relative;
@@ -149,6 +182,9 @@ h1 {
   margin: 1em auto 1em;
 }
 
+/* -------------------------------------------------------------------------------- @medias --------------------------------------------------------------- */
+
+
 @media only screen and (min-width: 268px) {
   #logo {
     position: absolute;
@@ -156,6 +192,22 @@ h1 {
     top:20%;
     left:0; right:0;
     margin: auto;
+  }
+
+
+
+  @media only screen and (min-width: 1000px) {
+    .container-main {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin: 8em;
+      padding: 3em;
+    }
+
+    #container_secure {
+      max-height: 65vh;
+      margin: auto;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
   }
 
 /* ==========================================================================
