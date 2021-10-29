@@ -15,6 +15,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  margin:0;
+  padding:0;
 }
 
 /*
@@ -86,6 +88,127 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* -------------------------------------------------------------------------------- Layer secure --------------------------------------------------------------- */
+
+
+
+#layer_secure {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  min-width: 100%;
+  min-height: 100%;
+  background: #fff;
+  text-align: center;
+  
+}
+
+#container_secure {
+  max-height: 40vh;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* -------------------------------------------------------------------------------- Tout --------------------------------------------------------------- */
+
+
+* {
+  margin : 0;
+  color : #3f3f3f;
+}
+
+
+
+.btn-outline-danger {
+  color: #f2388f;
+  border-color: #f2388f;
+}
+
+.pink {
+  color: #f2388f;
+}
+.btn-primary {
+  color: #f2388f;
+  background-color: #fff;
+  border-color: #f2388f ;
+}
+
+.card {
+
+  border: solid 2px #f2388f;
+  background-color: #f8f9fa ;
+  margin: 0.5em;
+}
+
+i.fab {
+  color:#f2388f;
+}
+
+
+
+#relative {
+  position: relative;
+  background-image: url("../img/img_fond_header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 35vh;
+}
+
+#layer {
+  width: 100%;
+  height:100%;
+  background-color:#fff;
+  position: absolute;
+  top: 0%; right: 0%;
+  opacity: 50%;
+
+}
+
+#logo {
+  position: absolute;
+  height: 40%;
+  top:30%;
+  left:0; right:0;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em auto 1em;
+}
+
+/* -------------------------------------------------------------------------------- @medias --------------------------------------------------------------- */
+
+
+@media only screen and (min-width: 268px) {
+  #logo {
+    position: absolute;
+    height: 60%;
+    top:20%;
+    left:0; right:0;
+    margin: auto;
+  }
+
+
+
+  @media only screen and (min-width: 1000px) {
+    .container-main {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin: 8em;
+      padding: 3em;
+    }
+
+    #container_secure {
+      max-height: 65vh;
+      margin: auto;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
 
 /* ==========================================================================
    Helper classes
