@@ -14,7 +14,7 @@ let httpRequest = new XMLHttpRequest();
                 // console.log(data);
                 for( let article of data){
                     console.log(data);
-                    let card = '<div class="col-sm-4"><div class="card"><div class="card-body"><h5 id="title_1" class="card-title">' + article.id + '</h5><p class="card-text">' + article.contenu + '</p><a href="#" class="btn btn-primary">Go somewhere</a></div></div></div>';
+                    let card = '<div class="col-sm-4"><div class="card"><div class="card-body"><h5 id="title_1" class="card-title">' + article.id + '</h5><p class="card-text">' + article.contenu + '</p><a href="#" class="btn btn-outline-danger">Go somewhere</a></div></div></div>';
                     document.getElementById('comptes').innerHTML += card;
                 }
             } else {
