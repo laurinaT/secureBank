@@ -14,7 +14,7 @@ let httpRequest = new XMLHttpRequest();
                 let data = JSON.parse(httpRequest.responseText);
                 console.log(data);
                 for( let statistique of data){
-                    let table = '<div class="col-6"><table class="text-center table table-bordered"><thead class="thead-dark"><tr><th colspan="2" scope="col">' + statistique.title + '</th></tr></thead><tbody>';
+                    let table = '<div class="col-12 col-md-6"><table class="m-0 text-center table table-bordered"><thead class="thead-dark"><tr><th colspan="2" scope="col">' + statistique.title + '</th></tr></thead><tbody>';
                     for(let key in statistique.value) {
                         console.log(key + " - " + statistique.value[key]);
                         table += '<tr><th scope="row">' + key +'</th><td>' + statistique.value[key] +'</td></tr>';
